@@ -1,33 +1,50 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 19 2024'
-heroImage: '/blog-placeholder-1.jpg'
+title: '1_making_a_blog'
+description: 'A blog post about starting a blog!'
+pubDate: 'September 9, 2024'
+heroImage: '/pexels-ketut-subiyanto-4126694.jpg'
+heroAlt: 'exhausted woman with head on laptop keyboard'
+heroCredit: 'Photo by Ketut Subiyanto: https://www.pexels.com/photo/exhausted-woman-with-head-on-keyboard-4126694/'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+> A blog post about starting a blog!
 
-## Headings
+With so many tools and options out there, starting a blog felt daunting — I often find myself with ‘_analysis paralysis_’ when it comes to starting out new projects out of the personal expectation that it has to be perfect. To get over this hurdle, I listed key objectives I had in mind when it came to what I wanted from building a blog. I wanted the ability to quickly spit out blog posts, have the flexibility to design the front-end (what the users see), and familiarize myself with modern development practices such as CI/CD (continuous integration/deployment).  I consulted with good ‘ol chatGPT, Stack Overflow and Reddit to see some suggestions on what people have been using. 
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Based on my objectives, I decided to go with a static site generator which creates a front-end for me over a ‘head-full’ CMS like Wordpress or even a front-end + CMS combination. I’ll be the only one posting so I don’t think a CMS is necessary.  
 
-# H1
+###### Before going further I’d like to clarify what these letters mean in simple terms...
 
-## H2
+**CMS** - _content management system_, it's a software platform that allows users to create, manage, and publish digital content on a website without needing too much tehcnical knowledge. It can either be...
+1. a headless CMS - which provides an API/back-end for content delivery to verious front-end technologies. Examples are Sanity, Contentful. 
+2. a traditional CMS - integrates both content management and presentation layers. Essentially controls the front-end and back-end of the website (like Wordpress)
 
-### H3
+"But what the heck are front-end, back-end, and API?"
 
-#### H4
+**Front-end** refers to the part of the website that users can see and interact with, it involves, structure, design, and functionality! Some of the languages and technologies for front-end are: HTML (_HyperText Markup Language_), CSS (_Cascading Style Sheets_), JS (_JavaScript_), and the rabbit hole can go even deeper with frameworks and libraries (pre-made code by really smart people so that we don't have to program commonly used coding patterns all over again) like the React, Angular, Vue, etc.
 
-##### H5
+**Back-end** is the part of the website that users don't see -- it's the 'server side' of a website or application that manages and stores data and logic. So when you think about it, a headless CMS is just pre-made code that provides the 'back-end' of our website. 
 
-###### H6
+An **API** stands for _Application Programming Interface_ and it's essentially code that allows the front-end to interact with the backend to get data or enable some kind of functionality. 
+<br/>
 
-## Paragraph
+Okay, now that we sort of know what we want to build our blog with, which technologies do we go with? With our current net worth of -$2.00 in Canadian pesos, we can’t exactly afford those fancy paid tools so we add another criteria to our search, it has to be free! It also has to be somewhat approachable as a novice web developer — at this point of writing I have some experience in front-end projects involving Javascript and React, alongside some Java API programming. 
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+~For now, I’ve chosen Gatsby — a React-based framework which will give us the foundation for our front-end portion of the website. It will generate code for me which is what the users see. 
+To set it up, simply follow the instructions on here, it involves installing some applications:
+https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/
+Setting up the environment (fiddling with different versions of Node, Gatsby, react-dom, react took some time) can be a headache but after several hours later,~ 
+I have a website I can view by entering this on my browser: http://localhost:8000 
+This initial website won’t be viewable on other people’s computers as the code is only stored in my computer…
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+I initially set out to use Gatsby as my static site generator of choice and went down the rabbit hole of setting up React components, installing Gatsby specific plugins, creating queries via GraphQL and rendering pages based on the queries. Unfortunately I hit a dead-end when I found out Gatsby as a framework has been deprecated for quite some time now (no support for it). See: https://github.com/gatsbyjs/gatsby/issues/38696. So I scrapped it, although I feel like I learned quite a bit about the workflow with regards to dynamic page routing and creating GraphQL queries — so this wasn’t a total waste of time 🥹. 
+
+Anyways, I now turn to another more modern static site generator (Astro!) for the front-end. 
+
+I’ll be going with Astro (a static site generator) to generate the HTML/CSS/JS/configuration files --> deploy and host this site using CloudFlare (so that everyone can see my website, not just me). 
+
+
+
 
 ## Images
 

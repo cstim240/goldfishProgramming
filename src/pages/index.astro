@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HeaderLink from '../components/HeaderLink.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -13,18 +14,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<h1>🐠 Hello, Everyone!</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Hi, I'm Tim Supan. I created this blog (made via <a href="https://astro.build/">Astro</a>) as a space to share my random thoughts, exciting projects, and experiences as a Software Systems major at SFU. Whether it's coding experiments, creative musings, or lessons learned along the way, you'll find a bit of everything here. I hope you enjoy your stay! 🎉
 			</p>
+
+			<p>
+				Why did I call it Goldfish Programming? Find out <HeaderLink href="/about">here</HeaderLink>!
+			</p>
+
+			<!--
 			<p>
 				This template comes with a few integrations already configured in your
 				<code>astro.config.mjs</code> file. You can customize your setup with
 				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
 				React, or Vue to your project.
 			</p>
+
 			<p>Here are a few ideas on how to get started with the template:</p>
 			<ul>
 				<li>Edit this page in <code>src/pages/index.astro</code></li>
@@ -44,6 +50,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					>astro-blog-template
 				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
 			</p>
+			 -->
+			
 		</main>
 		<Footer />
 	</body>
