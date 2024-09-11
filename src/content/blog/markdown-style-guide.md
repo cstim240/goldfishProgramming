@@ -28,7 +28,7 @@ Based on my objectives, I decided to go with a static site generator which creat
 An **API** stands for _Application Programming Interface_ and it's essentially code that allows the front-end to interact with the backend to get data or enable some kind of functionality. 
 <br/>
 
-Okay, now that we sort of know what we want to build our blog with, which technologies do we go with? With our current net worth of -$2.00 in Canadian pesos, we can’t exactly afford those fancy paid tools so we add another criteria to our search, it has to be free! It also has to be somewhat approachable as a novice web developer — at this point of writing I have some experience in front-end projects involving Javascript and React, alongside some Java API programming. 
+Okay, now that we sort of know what we want to build our blog with, which technologies do we go with? With our current net worth of -$2.00, we can’t exactly afford those fancy paid tools so we add another criteria to our search, it has to be free! It also has to be somewhat approachable as a novice web developer — at this point of writing I have some experience in front-end projects involving Javascript and React, alongside some Java API programming. 
 
 ~For now, I’ve chosen Gatsby — a React-based framework which will give us the foundation for our front-end portion of the website. It will generate code for me which is what the users see. 
 To set it up, simply follow the instructions on here, it involves installing some applications:
@@ -41,11 +41,14 @@ I initially set out to use Gatsby as my static site generator of choice and went
 
 Anyways, I now turn to another more modern static site generator (Astro!) for the front-end. 
 
-I’ll be going with Astro (a static site generator) to generate the HTML/CSS/JS/configuration files --> deploy and host this site using CloudFlare (so that everyone can see my website, not just me). 
+I’ll be going with Astro (a static site generator) to generate the HTML/CSS/JS/configuration files --> deploy and host this site using CloudFlare Pages (so that everyone can see my website, not just me). 
+
+After pushing all files and changes onto a Github repository (a place online to store code), the process for deployment was quite simple. I just had to get the link to my repository and provide it to Cloudflare. I adjust the settings to classify it as an Astro project and <b style="font-size:50px">BOOM!</b> We now have the link to our fully deployed and viewable <a style="text-decoration:none" href="https://goldfishprogramming.pages.dev">blog</a>!
+
+That's all for my first post, thanks for reading! I have some plans to add more features to this blog such as a reader counter and an email newsletter setup that provides subscribers with a notification. See you next time! 😃
 
 
-
-
+<!-- 
 ## Images
 
 ### Syntax
@@ -229,3 +232,4 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+-->
